@@ -1,0 +1,14 @@
+.nav {
+  background-color: orangered;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CSS Modules feature */
+.nav :global(.active) {
+  background-color: green;
+}
