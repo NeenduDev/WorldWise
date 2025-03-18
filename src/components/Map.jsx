@@ -3,8 +3,9 @@ import styles from "./Map.module.css";
 
 function Map() {
   const navigate = useNavigate();
-
+  // console.log(typeof navigate);
   const [searchParams, setSearchParams] = useSearchParams();
+  // console.log(typeof searchParams);
   const lat = searchParams.get("lat");
   const lng = searchParams.get("lng");
   return (
